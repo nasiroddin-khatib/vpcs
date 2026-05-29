@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>CORS Demo</title>
+</head>
+<body>
+
+    <h1>Frontend + Backend CORS Example</h1>
+
+    <button onclick="getData()">Get Data</button>
+
+    <h2 id="result"></h2>
+
+    <script>
+        async function getData() {
+
+            try {
+
+                const response = await fetch("http://Backend-LB-916548668.ap-south-1.elb.amazonaws.com/api/message", {
+                    method: "GET",
+                    credentials: "include"
+                });
+const data = await response.json();
+
+                document.getElementById("result").innerText = data.message;
+
+"index.html" 40L, 858Brror) {                                                                                                     23,0-1        Top
+                                                                                                                                  24,1           8%
+                console.error("Error:", error);                                                                                   25,0-1        16%
+                                                                                                                                  26,1          25%
+                document.getElementById("result").innerText =                                                                     27,0-1        33%
+                    "CORS or Backend Error";                                                                                      28,1          41%
+                                                                                                                                  29,0-1        50%
+            }                                                                                                                     30,1          58%
+        }                                                                                                                         31,0-1        66%
+    </script>                                                                                                                     32,1          75%
+                                                                                                                                  33,1          83%
+</body>                                                                                                                           34,0-1        91%
+</body>                                                                                                                           39,1          Bot
+</html>        
+                const data = await response.json();
+
+                document.getElementById("result").innerText = data.message;
