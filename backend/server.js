@@ -6,7 +6,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://13.200.251.35",
+    origin: "http://Backend-LB-935014965.ap-south-1.elb.amazonaws.com",
     methods: ["GET", "POST"],
     credentials: true
   })
